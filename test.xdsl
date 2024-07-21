@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="Shaking">
+			<state id="low" />
+			<state id="medium" />
+			<state id="high" />
+			<probabilities>0.3333333333333333 0.3333333333333333 0.3333333333333333</probabilities>
+		</cpt>
+		<cpt id="ShakingFragilityA">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<state id="DS3" />
+			<state id="DS4" />
+			<parents>Shaking</parents>
+			<probabilities>0.9296723313747892 0.04426547350466256 0.02503663932475016 0.001013521183610577 1.203461218743976e-05 0.8283605294483503 0.0933185103232908 0.0730432345453577 0.005168947529295575 0.0001087781537056616 0.03790776515781213 0.05774122018668548 0.338380697812534 0.4010663950997964 0.1649039217431719</probabilities>
+		</cpt>
+		<cpt id="ShakingFragilityB">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<state id="DS3" />
+			<state id="DS4" />
+			<parents>Shaking</parents>
+			<probabilities>0.9155425405784284 0.04239708195054922 0.03715927741448658 0.004608301200217639 0.0002927988563180779 0.8023513979561037 0.08289178332128744 0.09491762052363792 0.01804674505412101 0.001792453144849979 0.03052347479793038 0.03353210268409934 0.1886103447991206 0.3224227651332159 0.4249113125856337</probabilities>
+		</cpt>
+		<cpt id="ShakingFragilityC">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<state id="DS3" />
+			<state id="DS4" />
+			<parents>Shaking</parents>
+			<probabilities>0.9027830765207225 0.03728987015880707 0.04539920370630473 0.01205134218074785 0.002476507433417876 0.7799206201614413 0.06851279194097587 0.1028150785236988 0.03757823097106713 0.01117327840281698 0.02551185850195803 0.01967137561471277 0.09800056149623637 0.1872265900567951 0.6695896143302977</probabilities>
+		</cpt>
+		<cpt id="Liquefaction">
+			<state id="low" />
+			<state id="medium" />
+			<state id="high" />
+			<parents>Shaking</parents>
+			<probabilities>0.8 0.2 0 0.4 0.5 0.1 0.1 0.3 0.6</probabilities>
+		</cpt>
+		<cpt id="LiquefactionFragility">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<parents>Liquefaction</parents>
+			<probabilities>1 0 0 0 1 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="ShakingFragility">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<state id="DS3" />
+			<state id="DS4" />
+			<parents>ShakingFragilityA ShakingFragilityB ShakingFragilityC LiquefactionFragility</parents>
+			<probabilities>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 1 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 1 0 0 0 0 0 0 0 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 1 0 0 0 0 0 0 0 0 1 0 0 0 1 0 0 1 0 0 0 0 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 1 0 0 0 0 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</probabilities>
+		</cpt>
+		<cpt id="Tsunami">
+			<state id="zero" />
+			<state id="low" />
+			<state id="medium" />
+			<state id="high" />
+			<probabilities>0.25 0.25 0.25 0.25</probabilities>
+		</cpt>
+		<cpt id="TsunamiFragility">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<state id="DS3" />
+			<state id="DS4" />
+			<parents>Tsunami</parents>
+			<probabilities>0.9999999999999999 1.297050374253958e-16 5.540854493724796e-25 6.14405896378817e-47 1.636083281749525e-91 0.940503073382706 0.04432021524847408 0.01507558889855727 0.00010112040939462 2.060868046172073e-09 0.4213231636883221 0.08715535729661106 0.3076540129754748 0.1646282054954263 0.0192392605441657 0.2384500543206148 0.0343547289800345 0.2587826731253104 0.29943874996856 0.1689737936054804</probabilities>
+		</cpt>
+		<cpt id="Landslide">
+			<state id="no" />
+			<state id="yes" />
+			<probabilities>0.5 0.5</probabilities>
+		</cpt>
+		<cpt id="LandslideFragility">
+			<state id="DS0" />
+			<state id="DS4" />
+			<parents>Landslide</parents>
+			<probabilities>1 0 0 1</probabilities>
+		</cpt>
+		<cpt id="CombinedFragility">
+			<state id="DS0" />
+			<state id="DS1" />
+			<state id="DS2" />
+			<state id="DS3" />
+			<state id="DS4" />
+			<parents>ShakingFragility TsunamiFragility LandslideFragility</parents>
+			<probabilities>1 0 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 1 0 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE 1.6.2@b061b4f1f63d " name="Unnamed">
+			<node id="CombinedFragility">
+				<name>CombinedFragility</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>800 425 850 475</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="ShakingFragility">
+				<name>ShakingFragility</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>400 300 450 350</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="TsunamiFragility">
+				<name>TsunamiFragility</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 300 950 350</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="LandslideFragility">
+				<name>LandslideFragility</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1100 300 1150 350</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="ShakingFragilityA">
+				<name>ShakingFragilityA</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>200 175 250 225</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="ShakingFragilityB">
+				<name>ShakingFragilityB</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>400 175 450 225</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="ShakingFragilityC">
+				<name>ShakingFragilityC</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>600 175 650 225</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="LiquefactionFragility">
+				<name>LiquefactionFragility</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 300 750 350</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="Liquefaction">
+				<name>Liquefaction</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>700 50 750 100</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="Landslide">
+				<name>Landslide</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>1100 50 1150 100</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="Tsunami">
+				<name>Tsunami</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>900 50 950 100</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+			<node id="Shaking">
+				<name>Shaking</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>400 50 450 100</position>
+				<barchart active="true">
+				</barchart>
+			</node>
+		</genie>
+	</extensions>
+</smile>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<smile version="1.0" id="Unnamed" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="meanpga_lo">
+			<state id="Low" />
+			<state id="Mid" />
+			<state id="High" />
+			<probabilities>0.2677272727272727 0.4240909090909091 0.3081818181818182</probabilities>
+		</cpt>
+		<cpt id="Liq_Class">
+			<state id="A" />
+			<state id="B" />
+			<state id="C" />
+			<state id="D" />
+			<state id="E" />
+			<state id="Esk" />
+			<state id="F" />
+			<state id="H" />
+			<state id="M" />
+			<state id="Z" />
+			<parents>meanpga_lo</parents>
+			<probabilities>0.003395585738539898 0.6417657045840407 0.01018675721561969 0 0.08149405772495755 0.005093378607809847 0 0.2088285229202037 0.02886247877758913 0.02037351443123939 0.003215434083601286 0.3612004287245445 0.2036441586280815 0.01286173633440514 0.0932475884244373 0 0.01822079314040729 0.2733118971061093 0.01822079314040729 0.01607717041800643 0.008849557522123894 0.05457227138643068 0.5457227138643068 0.1106194690265487 0.1209439528023599 0 0.02212389380530973 0.1268436578171092 0.005899705014749262 0.004424778761061947</probabilities>
+		</cpt>
+		<cpt id="land_LP2500_max">
+			<state id="Low" />
+			<state id="Mid" />
+			<state id="High" />
+			<parents>meanpga_lo</parents>
+			<probabilities>1 0 0 1 0 0 0.995575221238938 0.002949852507374631 0.001474926253687316</probabilities>
+		</cpt>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="SMILE 1.6.2@b061b4f1f63d " name="Unnamed">
+			<node id="meanpga_lo">
+				<name>meanpga_lo</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="Liq_Class">
+				<name>Liq_Class</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+			<node id="land_LP2500_max">
+				<name>land_LP2500_max</name>
+				<interior color="e5f6f7" />
+				<outline color="0000bb" />
+				<font color="000000" name="MS Sans Serif" size="8" />
+				<position>-38 -18 38 18</position>
+			</node>
+		</genie>
+	</extensions>
+</smile>
